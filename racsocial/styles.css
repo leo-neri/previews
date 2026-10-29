@@ -20,6 +20,7 @@ h1,h2,h3,h4,p{margin:0}
 .hl{color:var(--lime)}
 
 .topbar{background:#120a2e;color:var(--muted);font-size:.75rem;text-align:center;padding:.4rem 1rem;border-bottom:1px solid var(--line)}
+.topbar a{display:inline-block;padding:14px 8px;margin:-14px 0;color:var(--text)}
 .hdr{position:sticky;top:0;z-index:50;background:rgba(7,1,20,.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .hdr__in{display:flex;align-items:center;gap:1.5rem;min-height:64px}
 .logo{display:inline-flex;align-items:center;min-height:44px}
