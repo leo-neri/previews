@@ -99,9 +99,9 @@
         if (!en.isIntersecting) return;
         io.unobserve(en.target);
         var m = en.target, img = $('img', m), c = m.parentNode.querySelector('.card__c');
-        gsap.fromTo(m, { clipPath: 'inset(0 0 100% 0)' }, { clipPath: 'inset(0 0 0% 0)', duration: 1.15, ease: 'expo.out', clearProps: 'clipPath' });
+        gsap.fromTo(m, { clipPath: 'inset(0 0 100% 0)' }, { clipPath: 'inset(0 0 0% 0)', duration: 1.15, ease: 'expo.out' });   // sem clearProps: o CSS escondido (inset 100%) voltaria e a imagem sumiria de novo
         if (img) gsap.fromTo(img, { scale: 1.3 }, { scale: 1, duration: 1.5, ease: 'expo.out', clearProps: 'transform' });
-        if (c) gsap.fromTo(c, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out', delay: 0.25, clearProps: 'all' });
+        if (c) gsap.fromTo(c, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out', delay: 0.25, clearProps: 'transform' });
       });
     }, { rootMargin: '0px 0px -10% 0px' });
     $$('.card__m').forEach(function (m) { io.observe(m); });
