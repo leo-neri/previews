@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RAC Social — Mais do que marketing, presença (prévia)</title>
+<meta name="description" content="Prévia não oficial de uma nova home para a RAC Social.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#070114">
+<link rel="icon" href="assets/logo-rac.webp">
+<link rel="preload" href="../_vendor/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>
+  // Animações só ficam "armadas" com JS e sem prefers-reduced-motion; se main.js não rodar em 2,5s, o CSS libera tudo.
+  (function () {
+    var d = document.documentElement;
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    d.classList.add('js');
+    window.__af = setTimeout(function () { d.classList.add('anim-fail'); }, 2500);
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<div class="topbar" role="note">Prévia não oficial · SEU-DOMINIO.com.br</div>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="logo" href="#top" aria-label="RAC Social — início"><img src="assets/logo-rac.webp" alt="RAC Social — Marketing Digital" width="443" height="87"></a>
+    <nav class="hdr__nav" aria-label="Principal">
+      <a href="#solucoes">Soluções</a><a href="#prova">Clientes</a><a href="#processo">Como funciona</a><a href="#equipe">Equipe</a>
+    </nav>
+    <a class="pill" href="#diagnostico">Diagnóstico gratuito</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="wrap hero__in">
+      <div class="hero__copy">
+        <p class="eyebrow">Para empresas que faturam acima de R$ 100 mil/mês</p>
+        <h1 class="h1" id="h1">Mais do que marketing, <span class="hl">presença.</span></h1>
+        <p class="lead">Redes sociais, tráfego pago, Google Meu Negócio, foto e vídeo e CRM, com um time dedicado que transforma invisibilidade em autoridade e autoridade em resultado.</p>
+        <div class="cta" data-in>
+          <a class="btn" href="#diagnostico">Agendar diagnóstico gratuito</a>
+          <a class="btn btn--ghost" href="https://wa.me/5511947265007" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <ul class="seals" data-in aria-label="Certificados pelas maiores companhias">
+          <li><img src="assets/google-partner-logo.webp" alt="Google Partner" width="300" height="113"></li><li><img src="assets/kommo-partners.webp" alt="Kommo Partners" width="300" height="113"></li><li><img src="assets/meta-business-partner.webp" alt="Meta Business Partner" width="300" height="113"></li>
+        </ul>
+      </div>
+      <div class="stage" id="stage">
+        <canvas id="gl" aria-hidden="true"></canvas>
+        <ul class="stage__fb" id="fb">
+          <li><img src="assets/ICONE-2-copiar.webp" alt="Tráfego Pago" loading="eager"></li><li><img src="assets/ICONE-3-copiar.webp" alt="Google Meu Negócio" loading="eager"></li><li><img src="assets/ICONE-4-copiar.webp" alt="Foto e Vídeo" loading="eager"></li><li><img src="assets/ICONE-5-copiar.webp" alt="CRM &amp; Automação" loading="eager"></li><li><img src="assets/ICONE-6-copiar.webp" alt="Estratégia Digital" loading="eager"></li>
+        </ul>
+        <span class="stage__tag" id="tag" aria-hidden="true"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="solucoes">
+    <div class="wrap">
+      <header class="sec__head" data-reveal>
+        <p class="eyebrow">Soluções</p>
+        <h2 class="h2">Presença digital completa, <span class="hl">sem pacote pronto</span></h2>
+        <p class="lead">Você cuida do atendimento, a RAC cuida da captação. Cada frente é desenhada para o seu segmento.</p>
+      </header>
+      <ul class="rows" id="rows">
+        
+        <li class="row" data-reveal data-img="assets/logo-rac-roxo-copiar.webp" data-cls="row__img--logo">
+          <span class="row__n">01</span>
+          <h3 class="row__t">Gestão de Redes Sociais</h3>
+          <div class="row__b">
+            <p>Instagram e Facebook com estratégia, posicionamento e consistência.</p>
+            <ul class="tags"><li>Planejamento editorial</li><li>Design e copy</li><li>Gestão de comunidade</li><li>Métricas</li></ul>
+          </div>
+          <img class="row__img row__img--logo" src="assets/logo-rac-roxo-copiar.webp" alt="" loading="lazy" width="96" height="96">
+        </li>
+        
+        <li class="row" data-reveal data-img="assets/ICONE-2-copiar.webp" data-cls="">
+          <span class="row__n">02</span>
+          <h3 class="row__t">Tráfego Pago</h3>
+          <div class="row__b">
+            <p>Meta Ads e Google Ads focados em gerar clientes qualificados e vendas.</p>
+            <ul class="tags"><li>Segmentação</li><li>Criativos</li><li>Otimização contínua</li><li>Remarketing</li></ul>
+          </div>
+          <img class="row__img " src="assets/ICONE-2-copiar.webp" alt="" loading="lazy" width="96" height="96">
+        </li>
+        
+        <li class="row" data-reveal data-img="assets/ICONE-3-copiar.webp" data-cls="">
+          <span class="row__n">03</span>
+          <h3 class="row__t">Google Meu Negócio</h3>
+          <div class="row__b">
+            <p>Seja encontrado no Google e no Maps por quem procura o que você vende, perto de você.</p>
+            <ul class="tags"><li>Otimização do perfil</li><li>Ranqueamento local</li><li>Gestão de avaliações</li><li>Relatórios mensais</li></ul>
+          </div>
+          <img class="row__img " src="assets/ICONE-3-copiar.webp" alt="" loading="lazy" width="96" height="96">
+        </li>
+        
+        <li class="row" data-reveal data-img="assets/ICONE-4-copiar.webp" data-cls="">
+          <span class="row__n">04</span>
+          <h3 class="row__t">Foto e Vídeo</h3>
+          <div class="row__b">
+            <p>Fotografia, vídeos, reels e captação com drone que elevam a percepção de valor da marca.</p>
+            <ul class="tags"><li>Vídeo institucional</li><li>Reels e stories</li><li>Fotografia</li><li>Drone</li></ul>
+          </div>
+          <img class="row__img " src="assets/ICONE-4-copiar.webp" alt="" loading="lazy" width="96" height="96">
+        </li>
+        
+        <li class="row" data-reveal data-img="assets/ICONE-5-copiar.webp" data-cls="">
+          <span class="row__n">05</span>
+          <h3 class="row__t">CRM &amp; Automação</h3>
+          <div class="row__b">
+            <p>Organização comercial, atendimento automatizado e follow-up para nenhum lead se perder.</p>
+            <ul class="tags"><li>CRM sob medida</li><li>Funis de venda</li><li>Automação de atendimento</li><li>Relatórios</li></ul>
+          </div>
+          <img class="row__img " src="assets/ICONE-5-copiar.webp" alt="" loading="lazy" width="96" height="96">
+        </li>
+        
+        <li class="row" data-reveal data-img="assets/ICONE-6-copiar.webp" data-cls="">
+          <span class="row__n">06</span>
+          <h3 class="row__t">Estratégia Digital</h3>
+          <div class="row__b">
+            <p>Planejamento, análise de dados e direcionamento personalizado para o próximo nível.</p>
+            <ul class="tags"><li>Diagnóstico</li><li>Plano de crescimento</li><li>Análise de dados</li><li>Consultoria</li></ul>
+          </div>
+          <img class="row__img " src="assets/ICONE-6-copiar.webp" alt="" loading="lazy" width="96" height="96">
+        </li>
+        
+      </ul>
+    </div>
+    <div class="peek" id="peek" aria-hidden="true"><img alt=""></div>
+  </section>
+
+  <section class="sec sec--proof" id="prova">
+    <div class="wrap">
+      <header class="sec__head" data-reveal>
+        <p class="eyebrow">Prova social</p>
+        <h2 class="h2">Marcas que confiam no <span class="hl">nosso trabalho</span></h2>
+      </header>
+    </div>
+    <div class="marquee" aria-label="Clientes">
+      <ul class="marquee__track">
+        <li><img src="assets/LOGO-chack-ho.webp" alt="Chack-Ho Carnes Nobres" loading="lazy" height="56"></li><li><img src="assets/LOGO-CONNECT-PEOPLE.webp" alt="Connect People" loading="lazy" height="56"></li><li><img src="assets/logo-estacao-vai-e-vem.webp" alt="Estação Vai e Vem" loading="lazy" height="56"></li><li><img src="assets/logo-gp-prime.webp" alt="GP Prime" loading="lazy" height="56"></li><li><img src="assets/logo-spasso.webp" alt="Spasso Kids e Teens" loading="lazy" height="56"></li><li><img src="assets/logo-vovo-1.webp" alt="Vovô do Chopp" loading="lazy" height="56"></li><li><img src="assets/logo-zw-1.webp" alt="ZW" loading="lazy" height="56"></li><li><img src="assets/logo-mult-1.webp" alt="Mult" loading="lazy" height="56"></li><li><img src="assets/Logo-rgb-leds-1.webp" alt="RGB Leds" loading="lazy" height="56"></li><li><img src="assets/LOGO-NEW-BIG-BOYS-1.webp" alt="New Bigboys" loading="lazy" height="56"></li>
+        <li aria-hidden="true"><img src="assets/LOGO-chack-ho.webp" alt="" loading="lazy" height="56"></li><li aria-hidden="true"><img src="assets/LOGO-CONNECT-PEOPLE.webp" alt="" loading="lazy" height="56"></li><li aria-hidden="true"><img src="assets/logo-estacao-vai-e-vem.webp" alt="" loading="lazy" height="56"></li><li aria-hidden="true"><img src="assets/logo-gp-prime.webp" alt="" loading="lazy" height="56"></li><li aria-hidden="true"><img src="assets/logo-spasso.webp" alt="" loading="lazy" height="56"></li><li aria-hidden="true"><img src="assets/logo-vovo-1.webp" alt="" loading="lazy" height="56"></li><li aria-hidden="true"><img src="assets/logo-zw-1.webp" alt="" loading="lazy" height="56"></li><li aria-hidden="true"><img src="assets/logo-mult-1.webp" alt="" loading="lazy" height="56"></li><li aria-hidden="true"><img src="assets/Logo-rgb-leds-1.webp" alt="" loading="lazy" height="56"></li><li aria-hidden="true"><img src="assets/LOGO-NEW-BIG-BOYS-1.webp" alt="" loading="lazy" height="56"></li>
+      </ul>
+    </div>
+    <div class="wrap">
+      <div class="rating" data-reveal>
+        <span class="stars" role="img" aria-label="5 estrelas">★★★★★</span>
+        <p><strong>Excelente</strong> · Mais de 70 avaliações no Google</p>
+      </div>
+      <h3 class="h3" data-reveal>Resultados que dá para mostrar</h3>
+      <p class="muted" data-reveal>Blocos de exemplo: a RAC ainda não publica cases com números. Aqui é o lugar deles.</p>
+      <ul class="cases">
+        
+        <li class="case" data-reveal>
+          <span class="ph">Case de exemplo — substituir pelo de vocês</span>
+          <h4>Nome do cliente</h4>
+          <small>Segmento</small>
+          <p>Qual era o desafio do cliente.</p>
+          <p class="case__r">Resultado real, com número e período.</p>
+        </li>
+        
+        <li class="case" data-reveal>
+          <span class="ph">Case de exemplo — substituir pelo de vocês</span>
+          <h4>Nome do cliente</h4>
+          <small>Segmento</small>
+          <p>Qual era o desafio do cliente.</p>
+          <p class="case__r">Resultado real, com número e período.</p>
+        </li>
+        
+        <li class="case" data-reveal>
+          <span class="ph">Case de exemplo — substituir pelo de vocês</span>
+          <h4>Nome do cliente</h4>
+          <small>Segmento</small>
+          <p>Qual era o desafio do cliente.</p>
+          <p class="case__r">Resultado real, com número e período.</p>
+        </li>
+        
+      </ul>
+      <ul class="quotes">
+        
+        <li class="quote" data-reveal>
+          <span class="ph">Depoimento de exemplo — substituir pelo de vocês</span>
+          <blockquote>Depoimento real do cliente, com nome, cargo e empresa.</blockquote>
+          <p><strong>Nome Sobrenome</strong> · Cargo, Empresa</p>
+        </li>
+        
+        <li class="quote" data-reveal>
+          <span class="ph">Depoimento de exemplo — substituir pelo de vocês</span>
+          <blockquote>Depoimento real do cliente, com nome, cargo e empresa.</blockquote>
+          <p><strong>Nome Sobrenome</strong> · Cargo, Empresa</p>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="processo">
+    <div class="wrap">
+      <header class="sec__head" data-reveal>
+        <p class="eyebrow">Como funciona</p>
+        <h2 class="h2">Do diagnóstico ao resultado, <span class="hl">com acompanhamento de perto</span></h2>
+      </header>
+      <ol class="steps">
+        
+        <li class="step" data-reveal><span class="step__n">1</span><h3>Diagnóstico gratuito</h3><p>Entendemos o momento do seu negócio e onde estão os gargalos de presença e vendas.</p></li>
+        
+        <li class="step" data-reveal><span class="step__n">2</span><h3>Estratégia sob medida</h3><p>Um plano desenhado para o seu segmento, sem pacote pronto.</p></li>
+        
+        <li class="step" data-reveal><span class="step__n">3</span><h3>Execução</h3><p>O time cuida de conteúdo, anúncios, Google Meu Negócio, vídeo e CRM.</p></li>
+        
+        <li class="step" data-reveal><span class="step__n">4</span><h3>Acompanhamento</h3><p>Gerente de conta dedicado, reuniões estratégicas mensais e relatórios claros.</p></li>
+        
+      </ol>
+      <div class="diff" data-reveal>
+        <p class="diff__t">Somos humanos transformando negócios.</p>
+        <ul><li>Estratégia personalizada</li><li>Acompanhamento próximo</li><li>Time que cresce com o cliente</li><li>Resultados mensuráveis e transparentes</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--alt" id="equipe">
+    <div class="wrap team">
+      <header class="sec__head" data-reveal>
+        <p class="eyebrow">Bastidores</p>
+        <h2 class="h2">Quem está por trás da <span class="hl">transformação</span></h2>
+        <p class="lead">Atuando desde 2021 com um time dedicado a negócios locais.</p>
+      </header>
+      <div class="team__photos">
+        <img data-reveal src="assets/equipe-2.webp" alt="Equipe em escritório" width="500" height="333" loading="lazy"><img data-reveal src="assets/equipe-4.webp" alt="Equipe trabalhando" width="500" height="333" loading="lazy">
+      </div>
+      <p class="team__note">Fotos do site atual (aparentam ser de banco de imagens): substituir por fotos reais do time.</p>
+      <ul class="members">
+        <li data-reveal><strong>Ricardo Battistella</strong><span>Founder &amp; CEO · Strategy &amp; Growth</span></li><li data-reveal><strong>Caio Battistella</strong><span>Customer Success &amp; Creative AI</span></li><li data-reveal><strong>Cauê Lepsch</strong><span>Head of Video &amp; Post-Production</span></li><li data-reveal><strong>Simone Ambrósio</strong><span>Senior Performance Marketing Specialist</span></li><li data-reveal><strong>Cecília Vagliengo</strong><span>Operations Manager</span></li><li data-reveal><strong>Carlos Paz</strong><span>Videomaker &amp; Video Editor</span></li><li data-reveal><strong>Elaine Ramos</strong><span>Administrative &amp; Operations</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec final" id="diagnostico">
+    <div class="wrap final__in">
+      <div data-reveal>
+        <h2 class="h2">Pare de competir por preço. <span class="hl">Comece a dominar por presença.</span></h2>
+        <p class="lead">Conte um pouco sobre a sua empresa e agende seu diagnóstico gratuito.</p>
+        <a class="btn btn--ghost" href="https://wa.me/5511947265007" target="_blank" rel="noopener">WhatsApp · +55 11 94726-5007</a>
+      </div>
+      <form class="form" id="form" data-reveal novalidate>
+        <label>Nome e sobrenome<input name="nome" autocomplete="name" required></label>
+        <label>E-mail corporativo<input name="email" type="email" autocomplete="email" required></label>
+        <label>Empresa<input name="empresa" autocomplete="organization"></label>
+        <label>Telefone<input name="tel" type="tel" autocomplete="tel"></label>
+        <label>Faturamento mensal
+          <select name="fat"><option>Até R$ 100 mil/mês</option><option>R$ 100 mil a R$ 500 mil/mês</option><option>Acima de R$ 500 mil/mês</option></select>
+        </label>
+        <label>Segmento<input name="segmento"></label>
+        <button class="btn" type="submit">Falar com especialista</button>
+        <p class="form__msg" id="formMsg" role="status" hidden>Isto é uma prévia: nada foi enviado. Na versão final, este formulário chega até o time da RAC Social.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <div><img src="assets/logo-rac.webp" alt="RAC Social — Marketing Digital" width="443" height="87" loading="lazy"><p>Mais do que marketing, PRESENÇA!</p></div>
+    <ul>
+      <li><a href="mailto:racsocialmediasp@gmail.com">racsocialmediasp@gmail.com</a></li>
+      <li><a href="https://instagram.com/rac.social" target="_blank" rel="noopener">@rac.social</a></li>
+      <li><a href="https://wa.me/5511947265007" target="_blank" rel="noopener">+55 11 94726-5007</a></li>
+    </ul>
+  </div>
+  <p class="wrap disclaimer">Prévia não oficial criada por Leo — SEU-DOMINIO.com.br · <a href="mailto:contato@SEU-DOMINIO.com.br" target="_blank" rel="noopener">Fale com o Leo</a></p>
+</footer>
+
+<script src="../_vendor/gsap.min.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>
