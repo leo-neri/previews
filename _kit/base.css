@@ -1,0 +1,34 @@
+/* Kit — base compartilhada. Cada agência define as próprias variáveis e o próprio layout/identidade no styles.css dela. */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+ul,ol{list-style:none;margin:0;padding:0}
+h1,h2,h3,h4,p{margin:0}
+body{margin:0;overflow-x:hidden}
+:focus-visible{outline:3px solid var(--accent,#fff);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent,#fff);color:var(--on-accent,#000);padding:.75rem 1rem;z-index:100}
+.skip:focus{left:0}
+.wrap{width:min(1200px,100% - 2.5rem);margin-inline:auto}
+.mw{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.mw__in{display:inline-block;will-change:transform}
+/* estado "armado" das animações: só com JS e movimento permitido; anim-fail (2,5 s sem main.js) libera tudo */
+.js:not(.anim-fail) [data-in],.js:not(.anim-fail) [data-reveal]{opacity:0}
+.js:not(.anim-fail) #h1{visibility:hidden}
+/* marquee em CSS puro (velocidade constante, nada ligado ao scroll) */
+.marquee{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee__track{display:flex;gap:2.5rem;width:max-content;align-items:center;animation:marquee 45s linear infinite}
+@keyframes marquee{to{transform:translateX(-50%)}}
+/* aviso obrigatório do preview */
+.pv-bar{font-size:.75rem;text-align:center;padding:.4rem 1rem}
+.pv-bar a{display:inline-block;padding:14px 8px;margin:-14px 0}
+.pv-foot{font-size:.8125rem;text-align:center;padding:1.25rem 0}
+.pv-foot a{display:inline-flex;align-items:center;min-height:44px;padding:0 .25rem}
+/* placeholder visível e marcado (único texto de rascunho permitido) */
+.ph{display:inline-block;background:#fbbc04;color:#1a1200;font-size:.75rem;font-weight:700;padding:.2rem .6rem;border-radius:6px;margin-bottom:1rem}
+.is-placeholder{border:2px dashed rgba(251,188,4,.6);border-radius:20px;padding:1.5rem;background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(251,188,4,.05) 14px 28px)}
+@media (prefers-reduced-motion:reduce){
+  .marquee__track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}
+  .marquee__track [aria-hidden=true]{display:none}
+  *{transition:none!important}
+}

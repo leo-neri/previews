@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>oito™ — live ideas anywhere (prévia)</title>
+<meta name="description" content="Prévia não oficial de uma nova home para a oito™, agência de brand experience com foco em conteúdo e live marketing.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="assets/logo-oito.webp">
+<link rel="preload" href="assets/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/hero.webp" type="image/webp">
+<link rel="stylesheet" href="../_kit/base.css">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // Animações só ficam "armadas" com JS e sem prefers-reduced-motion; se main.js não rodar em 2,5s, o CSS libera tudo.
+  (function () {
+    var d = document.documentElement;
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    d.classList.add('js');
+    window.__af = setTimeout(function () { d.classList.add('anim-fail'); }, 2500);
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<div class="pv-bar" role="note">Prévia não oficial criada por Leo · <a href="https://wa.me/5511958423900" target="_blank" rel="noopener">WhatsApp (11) 95842-3900</a></div>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="logo" href="#top" aria-label="oito — início"><img src="assets/logo-oito.webp" alt="oito™" width="360" height="414"></a>
+    <nav class="hdr__nav" aria-label="Principal">
+      <a href="#frentes">Frentes</a><a href="#como">Como fazemos</a><a href="#portfolio">Portfólio</a><a href="#contato">Contato</a>
+    </nav>
+    <a class="pill" href="https://instagram.com/oito.ag" target="_blank" rel="noopener">Falar no Instagram</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero__in">
+      <div class="eight" id="eight">
+        <div class="eight__p eight__p--a"><img src="assets/hero.webp" alt="Público de um evento ao vivo, com um rapaz de boné vermelho e pulseira amarela olhando o celular" width="900" height="600" fetchpriority="high"></div>
+        <div class="eight__p eight__p--b"><img src="assets/hero.webp" alt="" width="900" height="600"></div>
+        <span class="eight__tm" aria-hidden="true">TM</span>
+      </div>
+      <div class="hero__copy">
+        <p class="eyebrow" data-in>Brand experience · Pinheiros, São Paulo</p>
+        <h1 class="h1" id="h1">live ideas <span class="hl">anywhere</span></h1>
+        <p class="lead" data-in>Somos uma agência de brand experience focada em conteúdo e live marketing. Planejamos, desenhamos e executamos iniciativas que conectam marcas e pessoas por meio de experiências que fazem sentido.</p>
+        <div class="cta" data-in>
+          <a class="btn" href="https://instagram.com/oito.ag" target="_blank" rel="noopener">Falar no Instagram</a>
+          <a class="btn btn--ghost" href="#frentes">Ver as frentes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee mq" aria-label="live ideas anywhere">
+    <ul class="marquee__track">
+      <li><span class="mq__t">live ideas anywhere</span><i class="mark" aria-hidden="true"></i></li><li><span class="mq__t">live ideas anywhere</span><i class="mark" aria-hidden="true"></i></li><li><span class="mq__t">live ideas anywhere</span><i class="mark" aria-hidden="true"></i></li><li><span class="mq__t">live ideas anywhere</span><i class="mark" aria-hidden="true"></i></li>
+      <li aria-hidden="true"><span class="mq__t">live ideas anywhere</span><i class="mark" aria-hidden="true"></i></li><li aria-hidden="true"><span class="mq__t">live ideas anywhere</span><i class="mark" aria-hidden="true"></i></li><li aria-hidden="true"><span class="mq__t">live ideas anywhere</span><i class="mark" aria-hidden="true"></i></li><li aria-hidden="true"><span class="mq__t">live ideas anywhere</span><i class="mark" aria-hidden="true"></i></li>
+    </ul>
+  </div>
+
+  <section class="sec sec--paper" id="frentes">
+    <div class="wrap">
+      <header class="sec__head" data-reveal>
+        <p class="eyebrow">Duas frentes, um oito</p>
+        <h2 class="h2">Metade <span class="hl">live</span>, metade <span class="hl">conteúdo</span>.</h2>
+      </header>
+      <ul class="fronts">
+        
+        <li class="front front--a" data-reveal data-tilt>
+          <div class="front__pic"><img src="assets/hero.webp" alt="" loading="lazy" width="900" height="600"></div>
+          <div class="front__txt">
+            <span class="front__n">01</span>
+            <h3 class="front__t">Live marketing</h3>
+            <p>Ações ao vivo, no meio do público: a marca deixa de ser anúncio e vira experiência para quem está lá.</p>
+          </div>
+        </li>
+        
+        <li class="front front--b" data-reveal data-tilt>
+          <div class="front__pic"><img src="assets/hero.webp" alt="" loading="lazy" width="900" height="600"></div>
+          <div class="front__txt">
+            <span class="front__n">02</span>
+            <h3 class="front__t">Conteúdo</h3>
+            <p>Conteúdo pensado junto com a experiência, para a ideia continuar na conversa depois que a ação acaba.</p>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec sec--ink" id="como">
+    <div class="wrap">
+      <header class="sec__head" data-reveal>
+        <p class="eyebrow">Como fazemos</p>
+        <h2 class="h2">Do plano ao <span class="hl">palco</span>.</h2>
+      </header>
+      <ol class="steps">
+        
+        <li class="step" data-reveal>
+          <span class="step__n">01</span>
+          <h3 class="step__w">Planejamos</h3>
+          <p>Começamos pelo público que a marca quer alcançar.</p>
+        </li>
+        
+        <li class="step" data-reveal>
+          <span class="step__n">02</span>
+          <h3 class="step__w">Desenhamos</h3>
+          <p>Desenhamos a experiência e o conteúdo que levam a marca até ele.</p>
+        </li>
+        
+        <li class="step" data-reveal>
+          <span class="step__n">03</span>
+          <h3 class="step__w">Executamos</h3>
+          <p>Colocamos a ideia em pé, ao vivo, onde ela precisa estar.</p>
+        </li>
+        
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec sec--paper" id="portfolio">
+    <div class="wrap">
+      <header class="sec__head" data-reveal>
+        <p class="eyebrow">Portfólio</p>
+        <h2 class="h2">Trabalhos que <span class="hl">a gente conta</span>.</h2>
+      </header>
+      <ul class="cases">
+        
+        <li class="case is-placeholder" data-reveal>
+          <span class="ph">Case de exemplo — substituir pelo de vocês</span>
+          <h3>Marca de exemplo</h3>
+          <small>Live marketing</small>
+          <p>Descreva em duas linhas a ação, o público e o que aconteceu.</p>
+        </li>
+        
+        <li class="case is-placeholder" data-reveal>
+          <span class="ph">Case de exemplo — substituir pelo de vocês</span>
+          <h3>Marca de exemplo</h3>
+          <small>Conteúdo</small>
+          <p>Descreva em duas linhas o formato, onde rodou e o que gerou.</p>
+        </li>
+        
+        <li class="case is-placeholder" data-reveal>
+          <span class="ph">Case de exemplo — substituir pelo de vocês</span>
+          <h3>Marca de exemplo</h3>
+          <small>Live + conteúdo</small>
+          <p>Descreva em duas linhas como a ação ao vivo virou conteúdo.</p>
+        </li>
+        
+      </ul>
+      <div class="ig" data-reveal>
+        <p class="ig__n">11,3 mil</p>
+        <p class="ig__t">pessoas seguem a oito no Instagram <a href="https://instagram.com/oito.ag" target="_blank" rel="noopener">@oito.ag</a> · <a href="https://instagram.com/oito.content" target="_blank" rel="noopener">@oito.content</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--ink final" id="contato">
+    <div class="wrap final__in">
+      <div data-reveal>
+        <h2 class="h2">Qual é a próxima <span class="hl">ideia ao vivo</span>?</h2>
+        <p class="lead">Conta para a oito o que a sua marca quer viver. A conversa começa no Instagram.</p>
+        <a class="btn" href="https://instagram.com/oito.ag" target="_blank" rel="noopener">Falar no Instagram · @oito.ag</a>
+      </div>
+      <form class="form" id="form" data-reveal novalidate>
+        <label>Nome<input name="nome" autocomplete="name" required></label>
+        <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+        <label>Marca ou empresa<input name="empresa" autocomplete="organization"></label>
+        <label>Qual é a ideia?<textarea name="ideia" rows="3"></textarea></label>
+        <button class="btn" type="submit">Enviar mensagem</button>
+        <p class="form__msg" id="formMsg" role="status" hidden>Isto é uma prévia: nada foi enviado.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <div class="ftr__brand"><img src="assets/logo-oito.webp" alt="oito™" width="360" height="414" loading="lazy"><p>live ideas anywhere</p></div>
+    <ul class="ftr__soc">
+      <li><a href="https://www.instagram.com/oito.ag/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@oito.ag" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://www.linkedin.com/company/oitoag/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+  <p class="wrap ftr__c">© 2026 oito™ — Todos os direitos reservados.</p>
+  <p class="wrap pv-foot">Prévia não oficial criada por Leo · <a href="https://wa.me/5511958423900" target="_blank" rel="noopener">WhatsApp (11) 95842-3900</a></p>
+</footer>
+
+<script src="../_vendor/gsap.min.js" defer></script>
+<script src="../_kit/kit.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>

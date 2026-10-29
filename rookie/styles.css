@@ -1,0 +1,161 @@
+/* Rookie Digital — identidade: preto + verde bússola, Unbounded extra-largo. Conceito: "todo grande já foi calouro" = uma rota com norte. */
+@font-face{font-family:"Unbounded";font-style:normal;font-weight:500 900;font-display:swap;src:url(assets/fonts/unbounded.woff2) format("woff2")}
+:root{
+  --bg:#050505;--bg2:#0d0d0d;--line:rgba(255,255,255,.14);--text:#f6f6f6;--muted:#bdbdbd;
+  --accent:#00d60f;--on-accent:#021a04;
+  --head:"Unbounded","Arial Black",system-ui,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--body);font-size:1rem;line-height:1.6}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hl{color:var(--accent)}
+.pv-bar{background:var(--accent);color:var(--on-accent);font-weight:600}
+.pv-bar a{color:var(--on-accent)}
+.pv-foot{color:var(--muted);border-top:1px solid var(--line)}
+
+/* tipografia */
+.h1,.h2,h3,.def__w,.stop__n,.pledges__n{font-family:var(--head)}
+.h1{font-size:clamp(1.65rem,5.2vw,4.1rem);line-height:1.08;font-weight:800;text-transform:uppercase;letter-spacing:-.01em;overflow-wrap:break-word}
+.h2{font-size:clamp(1.5rem,3.8vw,2.9rem);line-height:1.12;font-weight:800;text-transform:uppercase;letter-spacing:-.01em;overflow-wrap:break-word}
+.lead{font-size:clamp(1rem,1.4vw,1.2rem);color:var(--muted);max-width:56ch}
+.kicker{font-family:var(--head);font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.eyebrow{font-family:var(--head);font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 1.6rem;border-radius:999px;background:var(--accent);color:var(--on-accent);font-family:var(--head);font-weight:700;font-size:.85rem;text-decoration:none;border:2px solid var(--accent);transition:transform .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-2px);background:#fff;border-color:#fff}
+.btn--ghost{background:transparent;color:var(--text);border-color:var(--line)}
+.btn--ghost:hover{background:var(--text);color:#000;border-color:var(--text)}
+.btn--block{width:100%}
+.pill{display:inline-flex;align-items:center;min-height:44px;padding:0 1.1rem;border-radius:999px;border:2px solid var(--accent);color:var(--accent);font-family:var(--head);font-size:.72rem;font-weight:700;text-decoration:none;transition:background .25s,color .25s}
+.pill:hover{background:var(--accent);color:var(--on-accent)}
+
+/* header */
+.hdr{padding:.9rem 0}
+.hdr__in{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{display:inline-flex;min-height:44px;align-items:center}
+.logo img{width:clamp(120px,16vw,170px);height:auto}
+.hdr__nav{display:none;gap:2rem}
+.hdr__nav a{font-size:.9rem;text-decoration:none;color:var(--muted);min-height:44px;display:inline-flex;align-items:center}
+.hdr__nav a:hover{color:var(--accent)}
+
+/* mostrador (dial de bússola desenhado em SVG puro, sem JS) */
+.dial{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.dial circle{fill:none}
+.dial__ticks{stroke:var(--accent);stroke-width:7;stroke-dasharray:.55 3.45;opacity:.75}
+.dial__major{stroke:var(--accent);stroke-width:14;stroke-dasharray:1.2 28.8;stroke-dashoffset:.6}
+.dial .dial__dot{fill:var(--accent)}
+
+/* hero */
+.hero{padding:.5rem 0 3rem;position:relative;overflow:hidden}
+.hero__in{display:grid;gap:1.75rem;align-items:center}
+.hero__copy{min-width:0}
+.hero .lead{margin-top:1.1rem}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+.stage{position:relative;width:min(62vw,260px);aspect-ratio:1;margin-inline:auto}
+.stage__img{position:absolute;inset:11%;width:78%;height:78%;object-fit:contain;will-change:transform}
+.chip{position:absolute;z-index:2;font-family:var(--head);font-size:.62rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--bg);color:var(--accent);border:1.5px solid var(--accent);padding:.5rem .75rem;border-radius:999px;white-space:nowrap;will-change:transform}
+.chip--a{top:6%;left:-4%}
+.chip--b{bottom:10%;left:-2%}
+.chip--c{top:42%;right:-6%}
+
+/* faixa */
+.strip{border-block:1px solid var(--line);padding:1rem 0;background:var(--bg2)}
+.strip .marquee__track{gap:1.6rem;animation-duration:50s}
+.strip span{font-family:var(--head);font-weight:800;font-size:clamp(1.1rem,2.4vw,1.8rem);text-transform:uppercase;white-space:nowrap;color:transparent;-webkit-text-stroke:1.2px var(--text)}
+.strip i{width:14px;height:14px;background:var(--accent);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);flex:none}
+
+/* quem somos */
+.about{padding:4.5rem 0}
+.about__in{display:grid;gap:2.5rem}
+.def{display:flex;flex-direction:column;gap:.35rem}
+.def__w{font-weight:900;text-transform:uppercase;font-size:clamp(3rem,13vw,9rem);line-height:.95;letter-spacing:-.03em;color:var(--text)}
+.def__m{font-family:var(--head);font-size:.85rem;color:var(--muted)}
+.about__body{display:grid;gap:1.25rem;align-content:start}
+.guides{width:100%;max-width:520px;margin-top:1rem;clip-path:inset(0 0 0 0)}
+.js:not(.anim-fail) .guides{clip-path:inset(0 100% 0 0)}
+
+/* serviços: rota em degraus */
+.svc{padding:4.5rem 0;background:var(--bg2);border-block:1px solid var(--line)}
+.svc__t{margin-bottom:3rem}
+.route{display:grid;gap:1.25rem;position:relative}
+.stop{position:relative}
+.card{position:relative;height:100%;background:var(--bg);border:1px solid var(--line);border-radius:24px;padding:1.75rem;overflow:hidden;transform-style:preserve-3d;--gx:50%;--gy:0%}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(240px circle at var(--gx) var(--gy),rgba(0,214,15,.16),transparent 70%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover::before{opacity:1}
+.card img{width:92px;height:auto;margin:1.2rem 0 1.4rem}
+.card h3{font-size:1.05rem;font-weight:800;text-transform:uppercase;margin-bottom:.6rem}
+.card p{color:var(--muted)}
+.stop__n{position:absolute;top:1.2rem;right:1.5rem;font-size:2.6rem;font-weight:900;color:transparent;-webkit-text-stroke:1.2px var(--accent);line-height:1}
+
+/* jeito Rookie: bloco verde, contraste de identidade */
+.jeito{background:var(--accent);color:var(--on-accent);padding:4.5rem 0}
+.kicker--ink{color:var(--on-accent)}
+.jeito__t{max-width:20ch;margin-bottom:2.5rem}
+.pledges{display:grid;gap:0;border-top:2px solid var(--on-accent)}
+.pledges li{display:grid;grid-template-columns:auto 1fr;gap:1.2rem;padding:1.5rem 0;border-bottom:2px solid var(--on-accent);align-items:start}
+.pledges__n{font-size:2.2rem;font-weight:900;line-height:1}
+.pledges h3{font-size:1.1rem;font-weight:800;text-transform:uppercase;margin-bottom:.35rem}
+.pledges p{font-size:1.02rem;max-width:44ch;font-weight:500}
+
+/* cases */
+.proof{padding:4.5rem 0}
+.proof__head{display:flex;flex-wrap:wrap;gap:1.25rem 2rem;align-items:flex-end;justify-content:space-between;margin-bottom:2.25rem}
+.gbadge{font-family:var(--head);font-size:.78rem;font-weight:600;border:1.5px solid var(--line);border-radius:999px;padding:.7rem 1.1rem}
+.cases{display:grid;gap:1.25rem}
+.case h3{font-size:1.05rem;font-weight:700;margin-bottom:1rem}
+.case dl{margin:0;display:grid;gap:.75rem}
+.case dl div{display:flex;gap:1rem;justify-content:space-between;border-top:1px solid var(--line);padding-top:.7rem}
+.case dt{color:var(--muted);font-size:.9rem}
+.case dd{margin:0}
+
+/* contato com a bússola */
+.contact{padding:4.5rem 0 5rem;border-top:1px solid var(--line);background:var(--bg2);overflow:hidden}
+.contact__in{display:grid;gap:2.5rem;align-items:center}
+.north{position:relative;width:min(78vw,360px);aspect-ratio:1;margin-inline:auto;touch-action:manipulation}
+.needle{position:absolute;left:50%;top:50%;height:68%;width:auto;aspect-ratio:262/1037;will-change:transform}
+.contact__copy{min-width:0}
+.contact__copy .lead{margin-top:1rem}
+.form{display:grid;gap:.75rem;margin-top:1.75rem;max-width:520px}
+.form input{width:100%;min-height:52px;background:var(--bg);color:var(--text);border:1.5px solid rgba(0,214,15,.55);border-radius:14px;padding:0 1rem;font:inherit}
+.form input::placeholder{color:#9a9a9a}
+.form input:focus{outline:3px solid var(--accent);outline-offset:2px;border-color:var(--accent)}
+.form__msg{color:var(--accent);font-weight:600}
+.reach{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;align-items:center;margin-top:1.5rem}
+.wa{display:inline-flex;align-items:center;gap:.7rem;min-height:56px;padding:0 1.4rem;border-radius:999px;background:#fff;color:#000;text-decoration:none}
+.wa svg{color:#0a7a14}
+.wa span{font-weight:600}
+.wa b{font-family:var(--head);font-size:.9rem;border-left:2px solid var(--accent);padding-left:.8rem}
+.tel{display:inline-flex;align-items:center;min-height:44px;color:var(--muted);text-underline-offset:4px}
+.tel:hover{color:var(--accent)}
+
+/* rodapé */
+.foot{border-top:1px solid var(--line)}
+.foot__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.75rem 0}
+.foot img{width:130px;height:auto}
+.foot p{color:var(--muted);font-size:.9rem}
+
+@media (min-width:720px){
+  .route{grid-template-columns:repeat(3,1fr);align-items:start;gap:1.5rem}
+  .stop:nth-child(2){margin-top:3.5rem}
+  .stop:nth-child(3){margin-top:7rem}
+  .cases{grid-template-columns:1fr 1fr}
+  .pledges li{grid-template-columns:5rem 1fr 1fr}
+}
+@media (min-width:900px){
+  .hdr__nav{display:flex}
+  .hero{padding:2rem 0 5rem}
+  .hero__in{grid-template-columns:1.1fr .9fr;gap:3rem}
+  .stage{order:2;width:100%;max-width:520px;margin-inline:auto 0}
+  .hero__copy{order:1}
+  .chip{font-size:.72rem}
+  .about__in{grid-template-columns:.9fr 1.1fr;gap:4rem}
+  .contact__in{grid-template-columns:.9fr 1.1fr;gap:4.5rem}
+  .north{width:100%;max-width:440px}
+}
+@media (min-width:1200px){
+  .about,.svc,.jeito,.proof{padding-block:6.5rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .btn:hover{transform:none}
+}

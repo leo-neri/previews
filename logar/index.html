@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agência Logar | Tráfego pago com foco em performance (prévia)</title>
+<meta name="description" content="Prévia não oficial de uma nova home para a Agência Logar.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#032a3f">
+<link rel="icon" href="assets/mark.webp">
+<link rel="preload" href="assets/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../_kit/base.css">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // Animações só ficam "armadas" com JS e sem prefers-reduced-motion; se main.js não rodar em 2,5s, o CSS libera tudo.
+  (function () {
+    var d = document.documentElement;
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    d.classList.add('js');
+    window.__af = setTimeout(function () { d.classList.add('anim-fail'); }, 2500);
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<div class="topbar pv-bar" role="note">Prévia não oficial criada por Leo · <a href="https://wa.me/5511958423900" target="_blank" rel="noopener">WhatsApp (11) 95842-3900</a></div>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="#top" aria-label="Agência Logar: início">
+      <img src="assets/mark.webp" alt="" width="40" height="40"><span class="brand__t">Agência <b>Logar</b></span>
+    </a>
+    <nav class="hdr__nav" aria-label="Principal">
+      <a href="#servicos">O que fazemos</a><a href="#diferenciais">Diferenciais</a><a href="#clientes">Clientes</a><a href="#contato">Contato</a>
+    </nav>
+    <a class="pill" href="#contato">Pedir uma proposta</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true">
+      <svg class="rings" id="rings" viewBox="0 0 800 800" focusable="false">
+        <g class="rings__g" fill="none" stroke-linecap="round">
+          <circle cx="400" cy="400" r="56" />
+          <circle cx="400" cy="400" r="104" stroke-dasharray="520 134" />
+          <circle cx="400" cy="400" r="152" />
+          <circle cx="400" cy="400" r="200" stroke-dasharray="880 376" />
+          <circle cx="400" cy="400" r="248" />
+          <circle cx="400" cy="400" r="296" stroke-dasharray="1500 360" />
+          <circle cx="400" cy="400" r="344" />
+          <circle cx="400" cy="400" r="392" stroke-dasharray="2000 460" />
+        </g>
+        <circle class="rings__pulse" id="pulse" cx="400" cy="400" r="392" fill="none" />
+      </svg>
+    </div>
+    <div class="wrap hero__in">
+      <div class="hero__copy">
+        <p class="eyebrow" data-in>Agência de tráfego pago · São Paulo</p>
+        <h1 class="h1" id="h1">Nascemos para <span class="hl">logar</span> sua empresa no digital.</h1>
+        <p class="lead" data-in>Tráfego pago com foco em performance para aumentar suas vendas, conquistar novos clientes ou fortalecer sua marca.</p>
+        <div class="cta" data-in>
+          <a class="btn" href="#contato">Pedir uma proposta</a>
+          <a class="btn btn--ghost" href="https://wa.me/5511947448585" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+        <a class="gbadge" href="https://www.google.com/partners/agency?id=2043023478" target="_blank" rel="noopener" data-in>
+          <img src="assets/gpartner.webp" alt="" width="250" height="214"><span>Agência parceira Google</span>
+        </a>
+      </div>
+
+      <div class="stage" id="stage">
+        <div class="stage__disc" aria-hidden="true"></div>
+        <span class="dp dp--man" data-depth="10"><img class="man" src="assets/man.webp" alt="Pessoa sorrindo olhando o celular" width="480" height="691" fetchpriority="high"></span>
+        <span class="dp dp--lap" data-depth="26"><img class="lap" src="assets/laptop.webp" alt="" width="480" height="402"></span>
+        <span class="dp dp--like" data-depth="38"><img class="like" src="assets/like.webp" alt="" width="297" height="300"></span>
+        <p class="login" id="login"><span class="login__dot" aria-hidden="true"></span><span class="login__who" id="who">sua empresa</span><span class="login__st" id="st">logada</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--fog" id="servicos">
+    <div class="wrap">
+      <header class="sec__head" data-reveal>
+        <p class="eyebrow">O que fazemos</p>
+        <h2 class="h2">Seis frentes de mídia paga, <span class="hl">uma</span> só equipe cuidando.</h2>
+        <p class="lead">Você diz o objetivo (vendas, contatos, tráfego ou marca) e a gente monta, opera e mede as campanhas.</p>
+      </header>
+      <ul class="grid">
+        
+        <li class="card card--1" data-reveal data-tilt>
+          <img class="card__ic" src="assets/ic-google.webp" alt="" width="200" height="200" loading="lazy">
+          <h3 class="card__t">Google Ads</h3>
+          <p class="card__p">Sua empresa aparece no momento exato da busca, quando o cliente digita a palavra-chave do seu produto ou serviço. Você paga por clique e define o orçamento diário.</p>
+        </li>
+        
+        <li class="card card--2" data-reveal data-tilt>
+          <img class="card__ic" src="assets/ic-meta.webp" alt="" width="200" height="200" loading="lazy">
+          <h3 class="card__t">Instagram e Facebook Ads</h3>
+          <p class="card__p">Anúncios nas maiores redes sociais para impulsionar sua marca, seus serviços e seus produtos, com segmentação para quem tem interesse em você.</p>
+        </li>
+        
+        <li class="card card--3" data-reveal data-tilt>
+          <img class="card__ic" src="assets/ic-microsoft.webp" alt="" width="200" height="200" loading="lazy">
+          <h3 class="card__t">Microsoft Ads</h3>
+          <p class="card__p">Anúncios de busca na rede da Microsoft, para somar alcance ao que você já faz no Google.</p>
+        </li>
+        
+        <li class="card card--4" data-reveal data-tilt>
+          <img class="card__ic" src="assets/ic-native.webp" alt="" width="200" height="200" loading="lazy">
+          <h3 class="card__t">Native Ads</h3>
+          <p class="card__p">Sua marca é encontrada durante a navegação nos maiores sites e portais do Brasil, misturando-se de forma nativa ao conteúdo. Trabalhamos com Outbrain, Taboola e Verizon Media Native.</p>
+        </li>
+        
+        <li class="card card--5" data-reveal data-tilt>
+          <img class="card__ic" src="assets/ic-ml.webp" alt="" width="200" height="200" loading="lazy">
+          <h3 class="card__t">Product Ads Mercado Livre</h3>
+          <p class="card__p">Mais visibilidade para os seus produtos dentro do Mercado Livre, com a conta operada e otimizada por especialistas, focada em vender.</p>
+        </li>
+        
+        <li class="card card--6" data-reveal data-tilt>
+          <img class="card__ic" src="assets/ic-call.webp" alt="" width="200" height="200" loading="lazy">
+          <h3 class="card__t">Call Tracking</h3>
+          <p class="card__p">Monitore a origem dos seus leads com a ferramenta de Call Tracking: maximize o retorno da mídia identificando quem entra em contato e como esse cliente encontrou você.</p>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec sec--blue" id="diferenciais">
+    <div class="wrap why">
+      <div class="why__art" data-reveal>
+        <span class="dp dp--wl" data-depth="22"><img class="why__lap" src="assets/laptop.webp" alt="" width="480" height="402" loading="lazy"></span>
+      </div>
+      <div class="why__copy">
+        <header data-reveal>
+          <p class="eyebrow eyebrow--m">Diferenciais</p>
+          <h2 class="h2">Transparência, atendimento e <span class="hl">qualidade</span> em cada campanha.</h2>
+          <p class="lead">Executamos o trabalho pensando sempre em performance, atrás dos objetivos e metas da sua empresa: geração de leads, contatos, tráfego, fortalecimento de marca ou vendas diretas.</p>
+        </header>
+        <ul class="pts">
+          
+          <li data-reveal><span class="pts__n">01</span><div><h3>Transparência</h3><p>Prezamos pela transparência no que é feito e no retorno das campanhas.</p></div></li>
+          
+          <li data-reveal><span class="pts__n">02</span><div><h3>Atenção que a sua empresa merece</h3><p>Aqui a sua empresa não é só mais uma.</p></div></li>
+          
+          <li data-reveal><span class="pts__n">03</span><div><h3>Foco no objetivo</h3><p>A campanha funciona de acordo com a sua meta: leads, contatos, vendas ou marca.</p></div></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="cert" data-reveal>
+        <img src="assets/gpartner.webp" alt="Selo Google Partner" width="250" height="214" loading="lazy">
+        <h3>Somos certificados Google</h3>
+        <p>Por isso confie em nós para entregar o melhor resultado, com as técnicas mais avançadas na gestão de tráfego dentro do ecossistema do Google.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="clientes">
+    <div class="wrap">
+      <header class="sec__head" data-reveal>
+        <p class="eyebrow">Clientes</p>
+        <h2 class="h2">Empresas de vários segmentos <span class="hl">já logaram</span> com a gente.</h2>
+        <p class="lead">Do ateliê de sobrancelhas à auto reparadora, da depilação à casa de repouso: montamos a estratégia a partir das palavras-chave e do negócio de cada cliente.</p>
+      </header>
+    </div>
+    <div class="marquee" aria-label="Clientes">
+      <ul class="marquee__track">
+        <li><img src="assets/casa-vila-mariana.webp" alt="Casa da Vila Mariana" loading="lazy" width="96" height="96"></li><li><img src="assets/alem-do-olhar.webp" alt="Além do Olhar" loading="lazy" width="96" height="96"></li><li><img src="assets/am-cofres.webp" alt="AM Cofres e Móveis" loading="lazy" width="96" height="96"></li><li><img src="assets/cidadania-luso.webp" alt="Cidadania Luso" loading="lazy" width="96" height="96"></li><li><img src="assets/Copiart.webp" alt="Copiart" loading="lazy" width="96" height="96"></li><li><img src="assets/D10.webp" alt="D10 Auto Reparadora" loading="lazy" width="96" height="96"></li><li><img src="assets/Facital.webp" alt="Facital" loading="lazy" width="96" height="96"></li><li><img src="assets/ideia-fertil.webp" alt="Ideia Fértil" loading="lazy" width="96" height="96"></li><li><img src="assets/n-flora.webp" alt="N Flora" loading="lazy" width="96" height="96"></li><li><img src="assets/new-age.webp" alt="New Age Comercial" loading="lazy" width="96" height="96"></li><li><img src="assets/open-laser.webp" alt="Open Laser Depilação" loading="lazy" width="96" height="96"></li><li><img src="assets/Polo-Norte.webp" alt="Polo Norte Refrigeração" loading="lazy" width="96" height="96"></li><li><img src="assets/PS-do-Vidro.webp" alt="PS do Vidro" loading="lazy" width="96" height="96"></li><li><img src="assets/Recebeu-Pagou-Moveis-de-Aco.webp" alt="Recebeu Pagou Móveis de Aço" loading="lazy" width="96" height="96"></li><li><img src="assets/Salgador-Vip.webp" alt="Salgados Vip" loading="lazy" width="96" height="96"></li><li><img src="assets/Siluets-Estetica.webp" alt="Siluets Estética" loading="lazy" width="96" height="96"></li><li><img src="assets/Smart-Vision.webp" alt="Smart Vision IT" loading="lazy" width="96" height="96"></li><li><img src="assets/Sofinatti-Estofados.webp" alt="Sofinatti Estofados" loading="lazy" width="96" height="96"></li><li><img src="assets/Sukira.webp" alt="Sukira" loading="lazy" width="96" height="96"></li><li><img src="assets/wizilux.webp" alt="Wizilux" loading="lazy" width="96" height="96"></li>
+        <li aria-hidden="true"><img src="assets/casa-vila-mariana.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/alem-do-olhar.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/am-cofres.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/cidadania-luso.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/Copiart.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/D10.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/Facital.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/ideia-fertil.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/n-flora.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/new-age.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/open-laser.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/Polo-Norte.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/PS-do-Vidro.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/Recebeu-Pagou-Moveis-de-Aco.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/Salgador-Vip.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/Siluets-Estetica.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/Smart-Vision.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/Sofinatti-Estofados.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/Sukira.webp" alt="" loading="lazy" width="96" height="96"></li><li aria-hidden="true"><img src="assets/wizilux.webp" alt="" loading="lazy" width="96" height="96"></li>
+      </ul>
+    </div>
+    <div class="wrap">
+      <p class="rev" data-reveal><span class="rev__g" aria-hidden="true">G</span>Mais de 30 avaliações no Google</p>
+      <div class="cases">
+        <article class="case" data-reveal>
+          <img src="assets/casa-vila-mariana.webp" alt="" width="96" height="96" loading="lazy">
+          <div>
+            <p class="case__k">Case de cliente</p>
+            <h3>Casa de Repouso da Vila Mariana</h3>
+            <p>Como a Casa da Vila Mariana passou a conseguir mais clientes sem depender de indicações e mídias convencionais? Quem conta é o proprietário, Cássio Salama, em vídeo.</p>
+          </div>
+        </article>
+        <article class="case is-placeholder" data-reveal>
+          <span class="ph">Case de exemplo — substituir pelo de vocês</span>
+          <h3>Nome do cliente</h3>
+          <small>Segmento</small>
+          <p>O desafio e o objetivo da campanha entram aqui.</p>
+          <p class="case__r">O resultado, com número e período, entra aqui.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--mint" id="contato">
+    <div class="wrap fin">
+      <div class="fin__copy" data-reveal>
+        <p class="eyebrow eyebrow--d">Contato</p>
+        <h2 class="h2">Vamos <span class="hl">logar</span> a sua empresa?</h2>
+        <p class="lead">Conte o que você vende e onde quer chegar. A gente responde com o caminho.</p>
+        <div class="fin__btns">
+          <a class="btn btn--dark" href="https://wa.me/5511947448585" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="btn btn--line" href="tel:+5511947448585">Ligar (11) 94744-8585</a>
+        </div>
+        <span class="dp dp--fl" data-depth="30"><img class="fin__like" src="assets/like.webp" alt="" width="297" height="300" loading="lazy"></span>
+      </div>
+      <form class="form" id="form" data-reveal novalidate>
+        <label>Nome<input name="nome" autocomplete="name" required></label>
+        <label>Empresa<input name="empresa" autocomplete="organization"></label>
+        <label>WhatsApp<input name="tel" type="tel" autocomplete="tel"></label>
+        <label>O que você quer anunciar?<textarea name="msg" rows="3"></textarea></label>
+        <button class="btn btn--dark" type="submit">Pedir uma proposta</button>
+        <p class="form__msg" id="formMsg" role="status" hidden>Isto é uma prévia: nada foi enviado.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="brand brand--f"><img src="assets/mark.webp" alt="" width="36" height="36"><span class="brand__t">Agência <b>Logar</b></span></span>
+    <p>Agência Logar · São Paulo · Tráfego pago com foco em performance</p>
+    <p class="pv-foot">Prévia não oficial criada por Leo · <a href="https://wa.me/5511958423900" target="_blank" rel="noopener">WhatsApp (11) 95842-3900</a></p>
+  </div>
+</footer>
+
+<script src="../_vendor/gsap.min.js" defer></script>
+<script src="../_kit/kit.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LIVE MKT — Transformando ideias em experiências (prévia)</title>
+<meta name="description" content="Prévia não oficial de uma nova home para a Agência LIVE MKT.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0e0630">
+<link rel="icon" href="assets/logo.webp">
+<link rel="preload" href="assets/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../_kit/base.css">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // Animações só ficam "armadas" com JS e sem prefers-reduced-motion; se main.js não rodar em 2,5s, o CSS libera tudo.
+  (function () {
+    var d = document.documentElement;
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    d.classList.add('js');
+    window.__af = setTimeout(function () { d.classList.add('anim-fail'); }, 2500);
+  })();
+</script>
+</head>
+<body>
+<div class="curtain" aria-hidden="true">
+  <i class="curtain__l"></i><i class="curtain__r"></i>
+  <img class="curtain__logo" src="assets/logo.webp" alt="" width="271" height="98">
+</div>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<div class="topbar pv-bar" role="note">Prévia não oficial criada por Leo · <a href="https://wa.me/5511958423900" target="_blank" rel="noopener">WhatsApp (11) 95842-3900</a></div>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="logo" href="#top" aria-label="Agência LIVE MKT — início"><img src="assets/logo.webp" alt="Agência LIVE MKT" width="271" height="98"></a>
+    <nav class="hdr__nav" aria-label="Principal">
+      <a href="#cases">Cases</a><a href="#servicos">Serviços</a><a href="#agencia">Agência</a><a href="#contato">Contato</a>
+    </nav>
+    <a class="pill" href="#contato">Fale com a LIVE</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true">
+      <i class="beam beam--a"></i><i class="beam beam--b"></i>
+      <i class="blob blob--a"></i><i class="blob blob--b"></i>
+      <i class="hero__spot" id="spot"></i>
+    </div>
+    <div class="wrap hero__in">
+      <div class="hero__copy">
+        <p class="eyebrow" data-in>Live marketing full service · atendimento em todo o Brasil</p>
+        <h1 class="h1" id="h1">Transformando ideias em <span class="hl">experiências.</span></h1>
+        <p class="lead" data-in>Criamos experiências memoráveis para conectar pessoas e marcas e gerar grandes resultados.</p>
+        <div class="cta" data-in>
+          <a class="btn" href="#contato">Fale com a LIVE</a>
+          <a class="btn btn--ghost" href="#cases">Ver cases</a>
+        </div>
+      </div>
+      <div class="deck" id="deck">
+        <div class="deck__rig" id="rig">
+          
+          <button class="dcard" type="button" data-open="10" style="left:27%;top:10%;width:46%;--r:-3deg;--z:70px;z-index:5" aria-label="Abrir case: Stand Santa Helena - Apas">
+            <img src="assets/cases/c11.webp" alt="Stand Santa Helena - Apas" width="600" height="600" loading="eager" fetchpriority="high" decoding="async">
+            <span>Santa Helena</span>
+          </button>
+          
+          <button class="dcard" type="button" data-open="7" style="left:0%;top:30%;width:33%;--r:-9deg;--z:10px;z-index:2" aria-label="Abrir case: Maratona de São Paulo — Keeta">
+            <img src="assets/cases/c08.webp" alt="Maratona de São Paulo — Keeta" width="600" height="600" loading="eager" fetchpriority="high" decoding="async">
+            <span>Keeta</span>
+          </button>
+          
+          <button class="dcard" type="button" data-open="5" style="left:67%;top:2%;width:33%;--r:7deg;--z:30px;z-index:3" aria-label="Abrir case: Lançamento Aeronave Chico Bento — GOL">
+            <img src="assets/cases/c06.webp" alt="Lançamento Aeronave Chico Bento — GOL" width="600" height="600" loading="eager" fetchpriority="high" decoding="async">
+            <span>GOL</span>
+          </button>
+          
+          <button class="dcard" type="button" data-open="1" style="left:62%;top:50%;width:37%;--r:5deg;--z:50px;z-index:4" aria-label="Abrir case: Convenção de Vendas — Petz">
+            <img src="assets/cases/c02.webp" alt="Convenção de Vendas — Petz" width="600" height="600" loading="eager" fetchpriority="high" decoding="async">
+            <span>Petz</span>
+          </button>
+          
+          <button class="dcard" type="button" data-open="6" style="left:3%;top:55%;width:35%;--r:-5deg;--z:40px;z-index:4" aria-label="Abrir case: Lançamento Xiaomi T14">
+            <img src="assets/cases/c07.webp" alt="Lançamento Xiaomi T14" width="600" height="600" loading="eager" fetchpriority="high" decoding="async">
+            <span>Xiaomi</span>
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" aria-label="Serviços">
+    <div class="marquee">
+      <ul class="marquee__track">
+        <li>Convenção de vendas</li><li>Eventos</li><li>Ativações de marca</li><li>Incentivo</li><li>Trade e PDV</li><li>Promoção</li><li>Stands</li><li>Endomarketing</li>
+        <li aria-hidden="true">Convenção de vendas</li><li aria-hidden="true">Eventos</li><li aria-hidden="true">Ativações de marca</li><li aria-hidden="true">Incentivo</li><li aria-hidden="true">Trade e PDV</li><li aria-hidden="true">Promoção</li><li aria-hidden="true">Stands</li><li aria-hidden="true">Endomarketing</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="sec" id="cases">
+    <div class="wrap">
+      <header class="sec__head" data-reveal>
+        <p class="eyebrow">Cases</p>
+        <h2 class="h2">O que a LIVE já <span class="hl">fez acontecer</span></h2>
+        <p class="lead">Convenções de vendas, lançamentos, ativações, stands e campanhas de incentivo para marcas como Petz, Kellanova, GOL, Keeta e Santa Helena.</p>
+      </header>
+      <ul class="mural" id="mural">
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="0" data-title="Ativação JK IGUATEMI VIBES | TikTok" data-client="Iguatemi" data-gal="assets/cases/c01-1.webp,assets/cases/c01-2.webp,assets/cases/c01-3.webp" data-yt="LH437lqQIN8" aria-haspopup="dialog">
+            <img src="assets/cases/c01.webp" alt="Ativação JK IGUATEMI VIBES | TikTok — Iguatemi" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Iguatemi</strong><em>Ativação JK IGUATEMI VIBES | TikTok</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="1" data-title="Convenção de Vendas" data-client="Petz" data-gal="assets/cases/c02-1.webp,assets/cases/c02-2.webp,assets/cases/c02-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c02.webp" alt="Convenção de Vendas — Petz" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Petz</strong><em>Convenção de Vendas</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="2" data-title="Convenção de Vendas" data-client="Kellanova" data-gal="assets/cases/c03-1.webp,assets/cases/c03-2.webp,assets/cases/c03-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c03.webp" alt="Convenção de Vendas — Kellanova" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Kellanova</strong><em>Convenção de Vendas</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="3" data-title="Convenção Especialistas" data-client="Ipiranga" data-gal="assets/cases/c04-1.webp,assets/cases/c04-2.webp,assets/cases/c04-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c04.webp" alt="Convenção Especialistas — Ipiranga" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Ipiranga</strong><em>Convenção Especialistas</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="4" data-title="Ativação de carnaval" data-client="DPSP" data-gal="assets/cases/c05-1.webp,assets/cases/c05-2.webp,assets/cases/c05-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c05.webp" alt="Ativação de carnaval — DPSP" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>DPSP</strong><em>Ativação de carnaval</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="5" data-title="Lançamento Aeronave Chico Bento" data-client="GOL" data-gal="assets/cases/c06-1.webp,assets/cases/c06-2.webp,assets/cases/c06-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c06.webp" alt="Lançamento Aeronave Chico Bento — GOL" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>GOL</strong><em>Lançamento Aeronave Chico Bento</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="6" data-title="Lançamento Xiaomi T14" data-client="" data-gal="assets/cases/c07-1.webp,assets/cases/c07-2.webp,assets/cases/c07-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c07.webp" alt="Lançamento Xiaomi T14" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Lançamento Xiaomi T14</strong></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="7" data-title="Maratona de São Paulo" data-client="Keeta" data-gal="assets/cases/c08-1.webp,assets/cases/c08-2.webp,assets/cases/c08-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c08.webp" alt="Maratona de São Paulo — Keeta" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Keeta</strong><em>Maratona de São Paulo</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="8" data-title="Stand Redmi Note 14" data-client="Xiaomi" data-gal="assets/cases/c09-1.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c09.webp" alt="Stand Redmi Note 14 — Xiaomi" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Xiaomi</strong><em>Stand Redmi Note 14</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="9" data-title="Evento Síndico NET" data-client="Quinto Andar" data-gal="assets/cases/c10-1.webp,assets/cases/c10-2.webp,assets/cases/c10-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c10.webp" alt="Evento Síndico NET — Quinto Andar" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Quinto Andar</strong><em>Evento Síndico NET</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="10" data-title="Stand Santa Helena - Apas" data-client="" data-gal="assets/cases/c11-1.webp,assets/cases/c11-2.webp,assets/cases/c11-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c11.webp" alt="Stand Santa Helena - Apas" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Stand Santa Helena - Apas</strong></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="11" data-title="Ativação NFL" data-client="Under Armour" data-gal="assets/cases/c12-1.webp,assets/cases/c12-2.webp,assets/cases/c12-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c12.webp" alt="Ativação NFL — Under Armour" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Under Armour</strong><em>Ativação NFL</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="12" data-title="Game de realidade virtual para lançamento de série" data-client="HBO" data-gal="assets/cases/c13-1.webp,assets/cases/c13-2.webp,assets/cases/c13-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c13.webp" alt="Game de realidade virtual para lançamento de série — HBO" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>HBO</strong><em>Game de realidade virtual para lançamento de série</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="13" data-title="Promoção Temporada de Prêmios" data-client="MELITTA" data-gal="assets/cases/c14-1.webp,assets/cases/c14-2.webp,assets/cases/c14-3.webp" data-yt="bIjEYDIVG3o" aria-haspopup="dialog">
+            <img src="assets/cases/c14.webp" alt="Promoção Temporada de Prêmios — MELITTA" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>MELITTA</strong><em>Promoção Temporada de Prêmios</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="14" data-title="Evento Transforma TALK" data-client="EPSON" data-gal="assets/cases/c15-1.webp,assets/cases/c15-2.webp,assets/cases/c15-3.webp" data-yt="C39g2lAX--M" aria-haspopup="dialog">
+            <img src="assets/cases/c15.webp" alt="Evento Transforma TALK — EPSON" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>EPSON</strong><em>Evento Transforma TALK</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="15" data-title="Convenção de Vendas" data-client="Linea" data-gal="assets/cases/c16-1.webp,assets/cases/c16-2.webp,assets/cases/c16-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c16.webp" alt="Convenção de Vendas — Linea" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Linea</strong><em>Convenção de Vendas</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="16" data-title="Convenção de Vendas" data-client="Bridgestone | Firestone | Bandag" data-gal="assets/cases/c17-1.webp,assets/cases/c17-2.webp,assets/cases/c17-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c17.webp" alt="Convenção de Vendas — Bridgestone | Firestone | Bandag" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Bridgestone | Firestone | Bandag</strong><em>Convenção de Vendas</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="17" data-title="Live Bonafont" data-client="Danone" data-gal="assets/cases/c18-1.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c18.webp" alt="Live Bonafont — Danone" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Danone</strong><em>Live Bonafont</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="18" data-title="Evento 40 anos" data-client="Tirolez" data-gal="assets/cases/c19-1.webp,assets/cases/c19-2.webp,assets/cases/c19-3.webp" data-yt="D6h30HOHDNg" aria-haspopup="dialog">
+            <img src="assets/cases/c19.webp" alt="Evento 40 anos — Tirolez" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Tirolez</strong><em>Evento 40 anos</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="19" data-title="Ativação de Game Of Thrones" data-client="HBO" data-gal="assets/cases/c20-1.webp,assets/cases/c20-2.webp,assets/cases/c20-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c20.webp" alt="Ativação de Game Of Thrones — HBO" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>HBO</strong><em>Ativação de Game Of Thrones</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="20" data-title="Stand na Comic Con Experience" data-client="Grendene" data-gal="assets/cases/c21-1.webp,assets/cases/c21-2.webp,assets/cases/c21-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c21.webp" alt="Stand na Comic Con Experience — Grendene" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Grendene</strong><em>Stand na Comic Con Experience</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="21" data-title="Coquetel de 15 anos da GOL na Argentina" data-client="GOL Linhas Aéreas" data-gal="assets/cases/c22-1.webp,assets/cases/c22-2.webp,assets/cases/c22-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c22.webp" alt="Coquetel de 15 anos da GOL na Argentina — GOL Linhas Aéreas" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>GOL Linhas Aéreas</strong><em>Coquetel de 15 anos da GOL na Argentina</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="22" data-title="Ativações de marca" data-client="Sympla" data-gal="assets/cases/c23-1.webp,assets/cases/c23-2.webp,assets/cases/c23-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c23.webp" alt="Ativações de marca — Sympla" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Sympla</strong><em>Ativações de marca</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="23" data-title="Campanha de Incentivo" data-client="Nestlé | DPA" data-gal="assets/cases/c24-1.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c24.webp" alt="Campanha de Incentivo — Nestlé | DPA" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>Nestlé | DPA</strong><em>Campanha de Incentivo</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="24" data-title="Campanha de Incentivo Game Of Thrones" data-client="HBO" data-gal="assets/cases/c25-2.webp,assets/cases/c25-3.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c25.webp" alt="Campanha de Incentivo Game Of Thrones — HBO" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>HBO</strong><em>Campanha de Incentivo Game Of Thrones</em></span>
+          </button>
+        </li>
+        
+        <li class="tile" data-reveal>
+          <button class="tile__btn" type="button" data-tilt data-i="25" data-title="Campanha de incentivo" data-client="EPSON" data-gal="assets/cases/c26-1.webp" data-yt="" aria-haspopup="dialog">
+            <img src="assets/cases/c26.webp" alt="Campanha de incentivo — EPSON" width="600" height="600" loading="lazy" decoding="async">
+            <span class="tile__cap"><strong>EPSON</strong><em>Campanha de incentivo</em></span>
+          </button>
+        </li>
+        
+      </ul>
+      <div class="mural__foot" data-reveal>
+        <p class="muted">Toque em um case para ver mais fotos.</p>
+        <button class="btn btn--ghost" type="button" id="more" data-more="Ver todos os cases" data-less="Mostrar menos" hidden>Ver todos os cases</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--svc" id="servicos">
+    <div class="wrap">
+      <header class="sec__head" data-reveal>
+        <p class="eyebrow">Serviços</p>
+        <h2 class="h2">Do conceito à <span class="hl">execução completa</span></h2>
+        <p class="lead">Agência full service de live marketing e eventos corporativos, com sede em São Paulo e atendimento em todo o Brasil.</p>
+      </header>
+      <ul class="rows" id="rows">
+        
+        <li class="row" data-reveal data-img="assets/cases/c02.webp" data-cap="Petz · Convenção de Vendas" data-cls="">
+          <img class="row__icon" src="assets/svc/convencao-de-vendas.webp" alt="" width="64" height="64" loading="lazy">
+          <h3 class="row__t">Convenção de Vendas</h3>
+          <p class="row__p">Conceito, logística, hospedagem e produção completa. Convenções que unem estratégia, conteúdo e experiência para engajar equipes e potencializar resultados.</p>
+        </li>
+        
+        <li class="row" data-reveal data-img="assets/cases/c10.webp" data-cap="Quinto Andar · Evento Síndico NET" data-cls="">
+          <img class="row__icon" src="assets/svc/eventos.webp" alt="" width="64" height="64" loading="lazy">
+          <h3 class="row__t">Eventos</h3>
+          <p class="row__p">Projetos únicos de eventos corporativos para diferentes objetivos e públicos, transformando encontros em experiências que geram conexão e impacto.</p>
+        </li>
+        
+        <li class="row" data-reveal data-img="assets/cases/c08.webp" data-cap="Keeta · Maratona de São Paulo" data-cls="">
+          <img class="row__icon" src="assets/svc/ativacao-de-marca.webp" alt="" width="64" height="64" loading="lazy">
+          <h3 class="row__t">Ativações de marca</h3>
+          <p class="row__p">Ativações com propósito e criatividade que despertam atenção, estimulam a interação e fortalecem a presença da marca junto ao público.</p>
+        </li>
+        
+        <li class="row" data-reveal data-img="assets/cases/c26.webp" data-cap="EPSON · Campanha de incentivo" data-cls="">
+          <img class="row__icon" src="assets/svc/incentivo.webp" alt="" width="64" height="64" loading="lazy">
+          <h3 class="row__t">Incentivo</h3>
+          <p class="row__p">Toda a jornada de campanhas de incentivo que engajam, reconhecem resultados e transformam desafios em conquistas.</p>
+        </li>
+        
+        <li class="row" data-reveal data-img="assets/cases/c05.webp" data-cap="DPSP · Ativação de carnaval" data-cls="">
+          <img class="row__icon" src="assets/svc/pdv.webp" alt="" width="64" height="64" loading="lazy">
+          <h3 class="row__t">Trade e PDV</h3>
+          <p class="row__p">Da concepção da campanha à produção de materiais de MPDV e contratação de mão de obra: soluções que destacam a marca, estimulam a escolha e potencializam vendas.</p>
+        </li>
+        
+        <li class="row" data-reveal data-img="assets/cases/c14.webp" data-cap="MELITTA · Promoção Temporada de Prêmios" data-cls="">
+          <img class="row__icon" src="assets/svc/promocao.webp" alt="" width="64" height="64" loading="lazy">
+          <h3 class="row__t">Promoção</h3>
+          <p class="row__p">Estratégia, legalizações, mecânicas, premiações e implementação em campo de ações promocionais que estimulam a participação e impulsionam vendas.</p>
+        </li>
+        
+        <li class="row" data-reveal data-img="assets/cases/c11.webp" data-cap="Stand Santa Helena - Apas" data-cls="">
+          <img class="row__icon" src="assets/svc/stands.webp" alt="" width="64" height="64" loading="lazy">
+          <h3 class="row__t">Stands</h3>
+          <p class="row__p">Do projeto à execução, stands para eventos e feiras desenhados a partir do contexto, dos objetivos e do público da marca.</p>
+        </li>
+        
+        <li class="row" data-reveal data-img="assets/vem-pra-live.webp" data-cap="" data-cls="is-mark">
+          <img class="row__icon" src="assets/svc/endomarketing.webp" alt="" width="64" height="64" loading="lazy">
+          <h3 class="row__t">Endomarketing</h3>
+          <p class="row__p">Objetivos internos viram ações que aproximam pessoas, fortalecem a cultura e tornam a comunicação interna mais conectada e engajadora.</p>
+        </li>
+        
+      </ul>
+    </div>
+    <figure class="peek" id="peek" aria-hidden="true"><img alt=""><figcaption></figcaption></figure>
+  </section>
+
+  <section class="sec sec--light" id="agencia">
+    <div class="wrap about">
+      <div class="about__txt" data-reveal>
+        <p class="eyebrow">Agência</p>
+        <h2 class="h2">Somos uma agência de <span class="hl">live marketing</span> full service</h2>
+        <p class="lead">Com atendimento em todo o Brasil, criamos experiências memoráveis para conectar pessoas e marcas e gerar grandes resultados.</p>
+        <p class="lead">Toda marca que gera experiência permanece mais tempo na nossa memória. Esse é o princípio do live marketing e do nosso negócio.</p>
+      </div>
+      <div class="about__img" id="mega" data-reveal>
+        <img src="assets/vem-pra-live.webp" alt="#VemPraLive — megafone em neon" width="700" height="439" loading="lazy">
+      </div>
+    </div>
+    <div class="wrap clients">
+      <header data-reveal>
+        <p class="eyebrow">Clientes</p>
+        <h3 class="h3">Marcas que já viveram a LIVE</h3>
+      </header>
+    </div>
+    <div class="marquee marquee--logos" aria-label="Clientes">
+      <ul class="marquee__track">
+        <li><img src="assets/logos/bombril.webp" alt="Bombril" loading="lazy" height="60"></li><li><img src="assets/logos/dpsp.webp" alt="Drogaria São Paulo" loading="lazy" height="60"></li><li><img src="assets/logos/epson.webp" alt="Epson" loading="lazy" height="60"></li><li><img src="assets/logos/gol.webp" alt="GOL" loading="lazy" height="60"></li><li><img src="assets/logos/hbo-preto.webp" alt="HBO" loading="lazy" height="60"></li><li><img src="assets/logos/ipiranga.webp" alt="Ipiranga" loading="lazy" height="60"></li><li><img src="assets/logos/keeta.webp" alt="Keeta" loading="lazy" height="60"></li><li><img src="assets/logos/logo-xiaomi.webp" alt="Xiaomi" loading="lazy" height="60"></li><li><img src="assets/logos/mars-kellanova.webp" alt="Mars Kellanova" loading="lazy" height="60"></li><li><img src="assets/logos/mellita.webp" alt="Melitta" loading="lazy" height="60"></li><li><img src="assets/logos/petz.webp" alt="Petz" loading="lazy" height="60"></li><li><img src="assets/logos/quintoandar.webp" alt="QuintoAndar" loading="lazy" height="60"></li><li><img src="assets/logos/santa-helena.webp" alt="Santa Helena" loading="lazy" height="60"></li><li><img src="assets/logos/shoppee.webp" alt="Shopee" loading="lazy" height="60"></li><li><img src="assets/logos/sodexo.webp" alt="Sodexo" loading="lazy" height="60"></li><li><img src="assets/logos/supley.webp" alt="Supley" loading="lazy" height="60"></li><li><img src="assets/logos/tirolez.webp" alt="Tirolez" loading="lazy" height="60"></li><li><img src="assets/logos/ultragaz.webp" alt="Ultragaz" loading="lazy" height="60"></li><li><img src="assets/logos/vulcabras.webp" alt="Vulcabras" loading="lazy" height="60"></li><li><img src="assets/logos/wella.webp" alt="Wella" loading="lazy" height="60"></li>
+        <li aria-hidden="true"><img src="assets/logos/bombril.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/dpsp.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/epson.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/gol.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/hbo-preto.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/ipiranga.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/keeta.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/logo-xiaomi.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/mars-kellanova.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/mellita.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/petz.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/quintoandar.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/santa-helena.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/shoppee.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/sodexo.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/supley.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/tirolez.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/ultragaz.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/vulcabras.webp" alt="" loading="lazy" height="60"></li><li aria-hidden="true"><img src="assets/logos/wella.webp" alt="" loading="lazy" height="60"></li>
+      </ul>
+    </div>
+    <div class="wrap">
+      <figure class="quote is-placeholder" data-reveal>
+        <span class="ph">Depoimento de exemplo — substituir pelo de vocês</span>
+        <blockquote>Depoimento real do cliente, com nome, cargo e empresa.</blockquote>
+        <figcaption><strong>Nome Sobrenome</strong> · Cargo, Empresa</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec final" id="contato">
+    <div class="wrap final__in">
+      <div class="final__txt" data-reveal>
+        <p class="eyebrow">Contato</p>
+        <h2 class="h2 h2--xl">Vem pra <span class="hl">LIVE!</span></h2>
+        <p class="lead">Conte o que você quer fazer acontecer. A gente responde.</p>
+        <div class="cta">
+          <a class="btn" href="tel:+551126190450" target="_blank" rel="noopener">Ligar · (11) 2619-0450</a>
+          <a class="btn btn--ghost" href="tel:+551126190450">Ligar +55 11 2619-0450</a>
+        </div>
+        <address class="addr">
+          <p><strong>Endereço</strong><br>Rua Borges de Figueiredo, 303<br>Cj. 716 – Mooca – São Paulo/SP<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Borges+de+Figueiredo+303+Mooca+S%C3%A3o+Paulo" target="_blank" rel="noopener">Como chegar</a></p>
+          <p><strong>Vem para LIVE!</strong><br>Quer fazer parte do time? Envie seu CV para<br><a href="mailto:rh@agencialivemkt.com.br">rh@agencialivemkt.com.br</a></p>
+        </address>
+      </div>
+      <form class="form" id="form" data-reveal novalidate>
+        <label>Nome<input name="nome" autocomplete="name" required></label>
+        <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+        <label>Telefone<input name="tel" type="tel" autocomplete="tel"></label>
+        <label>Mensagem<textarea name="msg" rows="4"></textarea></label>
+        <button class="btn" type="submit">Enviar</button>
+        <p class="form__priv">Ao enviar você declara que concorda com a política de privacidade.</p>
+        <p class="form__msg" id="formMsg" role="status" hidden>Isto é uma prévia: nada foi enviado. Na versão final, este formulário chega até o time da LIVE MKT.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <div><img src="assets/logo.webp" alt="Agência LIVE MKT" width="271" height="98" loading="lazy"><p>Transformando ideias em experiências.</p></div>
+    <ul>
+      <li><a href="https://www.instagram.com/agencialivemkt" target="_blank" rel="noopener">@agencialivemkt</a></li>
+      <li><a href="https://www.facebook.com/agencialivemkt" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="tel:+551126190450">+55 11 2619-0450</a></li>
+    </ul>
+  </div>
+  <p class="wrap disclaimer pv-foot">Prévia não oficial criada por Leo · <a href="https://wa.me/5511958423900" target="_blank" rel="noopener">WhatsApp (11) 95842-3900</a></p>
+</footer>
+
+<dialog class="dlg" id="dlg" aria-labelledby="dlgT">
+  <button class="dlg__x" type="button" id="dlgX" aria-label="Fechar">&times;</button>
+  <div class="dlg__main"><img id="dlgImg" alt="" width="1000" height="667"></div>
+  <ul class="dlg__thumbs" id="dlgThumbs"></ul>
+  <div class="dlg__info">
+    <p class="dlg__client" id="dlgC"></p>
+    <h3 id="dlgT"></h3>
+    <a class="btn btn--sm" id="dlgYt" target="_blank" rel="noopener" hidden>Assistir ao vídeo no YouTube</a>
+  </div>
+</dialog>
+
+<script src="../_vendor/gsap.min.js" defer></script>
+<script src="../_kit/kit.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>
